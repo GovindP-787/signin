@@ -3,17 +3,20 @@ body{
     justify-content: center;    
     align-items: center;
     height: 100vh;
-   }
+   background: #aba2a2;
+background: linear-gradient(180deg,rgba(171, 162, 162, 1) 0%, rgba(26, 41, 37, 1) 100%);}
 .container{
     border: 1px  black;
     height: 400px;
     width: 400px;
     border-radius: 30px;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(36, 35, 35, 0.6);
+    
 }
 h1{
     text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 input{
     width: 240px;
@@ -21,8 +24,11 @@ input{
     border-radius: 30px;
     margin: 10px;
     padding: 10px;
-    margin-left: 64px;
+    margin-left: 14px;
     font-size: 15px;
+    border: none;
+
+
 }
 label{
     margin-left: 64px;
@@ -35,8 +41,31 @@ label{
     border-radius: 30px;
     margin-left: 124px;
     margin-top: 50px;
-    background-color: #331010;
+    background-color: #070707;
     color: white;
     border: none;
     cursor: pointer;
+}
+#btn:hover{
+    background-color: #0a0a0a;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s ease;
+}
+i{
+    padding-left: 40px;
+    padding-right: 0px;
+    font-size: 22px;
+}
+a{
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    margin-left: 330px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input::placeholder{
+    color: #c1b9b9;
+    font-size: 14px;
 }
