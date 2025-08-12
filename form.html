@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+   <div class="container">
+  <div class="wrapper">
+
+  
+    <div class="signin">
+      <h1 id="h">SIGN IN</h1>
+      <form action="">
+        <div class="m"></div>
+        <div>
+          <label for="username">Username</label>
+          <input type="text" placeholder="John Doe" required name="username">
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" placeholder="*****" required name="password">
+        </div>
+        <div>
+          <input type="submit" value="Sign In" id="btn">
+        </div>
+      </form>
+    </div>
+
+    
+
+</div>
+   </div>
+    <script src="script.js">
+
+        // ...existing code...
+document.getElementById('h').addEventListener('mouseover', function() {
+    document.querySelector('.wrapper').style.transform = 'translateX(300px)';
+    document.querySelector('.wrapper').style.transition = 'transform 0.5s ease';
+});
+// ...existing code...
+    </script>
+</body>
+</html>
