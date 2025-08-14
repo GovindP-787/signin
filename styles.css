@@ -4,19 +4,22 @@ body{
     align-items: center;
     height: 100vh;
    background: #aba2a2;
-background: linear-gradient(180deg,rgba(171, 162, 162, 1) 0%, rgba(26, 41, 37, 1) 100%);}
+ background: linear-gradient(120deg, #2c2c30 0%, #23272f 100%);
+}
 .container{
+    background: rgba(30, 30, 36, 0.92);
     border: 1px  black;
     height: 400px;
     width: 400px;
     border-radius: 30px;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(36, 35, 35, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(142, 136, 136, 0.45);
     
 }
 h1{
     text-align: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'montserrat', sans-serif;
+    color: white;
 }
 input{
     width: 240px;
@@ -26,7 +29,11 @@ input{
     padding: 10px;
     margin-left: 14px;
     font-size: 15px;
-    border: none;
+    border: 0px;
+     background: rgba(255,255,255,0.25);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    outline: none;
 
 
 }
@@ -34,6 +41,8 @@ label{
     margin-left: 64px;
     font-size: 16px;
     padding: 10px;
+    font-family: 'montserrat', sans-serif;
+    color: white;
 }
 #btn{
     width: 140px;
@@ -45,16 +54,22 @@ label{
     color: white;
     border: none;
     cursor: pointer;
+    background: linear-gradient(120deg, #939ba9 20%, #393951 100%);
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(65,88,208,0.15);
+    transition: 0.4s ease-in-out, transform 0.3s;
 }
 #btn:hover{
-    background-color: #0a0a0a;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    transition: background-color 0.3s ease;
+     background: linear-gradient(90deg, #393951 0%, #939ba9 100%);
+    transform: translateY(-2px) scale(1.03);
 }
 i{
     padding-left: 40px;
     padding-right: 0px;
     font-size: 22px;
+    color: white;
 }
 a{
     text-decoration: none;
@@ -63,9 +78,15 @@ a{
     margin-left: 330px;
     padding-bottom: 20px;
     font-weight: 600;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'montserrat', sans-serif;
+    
 }
 input::placeholder{
-    color: #c1b9b9;
+    color: #878686;
     font-size: 14px;
+}
+input:focus{
+    background: #23272f;
+    border: 1.5px solid #6265fb;
+    box-shadow: 0 4px 16px rgba(99,102,241,0.10);
 }
