@@ -21,7 +21,7 @@
   
     <div class="signin">
       <h1 id="h">SIGN IN</h1>
-      <form action="https://govindp-787.github.io/Portfolio" >
+      <form action="https://govindp-787.github.io/Portfolio" id="form">
         <div class="m"></div>
         <div>
           <label for="username">Username</label><br><i class="fa-solid fa-user"></i>
@@ -29,7 +29,8 @@
         </div>
         <div>
           <label for="password">Password</label><br><i class="fa-solid fa-lock"></i>
-          <input type="password" placeholder="************" required name="password">
+          <input type="password" placeholder="************" name="password" id="p">
+          <div id="jsh1"></div>
         </div>
         <div>
           <input type="submit" value="Sign In" id="btn">
@@ -42,6 +43,32 @@
 
 </div>
    </div>
-    
+    <Script>
+      var pass = document.getElementById("p");
+      var form = document.getElementById("form");
+      let msg = document.getElementById("jsh1");
+      form.addEventListener("submit", function(event){
+        if (pass.value === ""){
+          event.preventDefault();
+         pass.classList.add("pjs");
+        }
+        else if(pass.value.length < 8){
+          event.preventDefault();
+         pass.classList.add("pjs");
+          msg.innerHTML = "Password must be at least 8 characters long";
+          msg.classList.add("error");
+          
+        }
+      })
+      pass.addEventListener("input",function(){
+        if (pass.value.length >= 8){
+          msg.innerHTML = "";
+          msg.classList.remove("error");
+          pass.classList.remove("pjs");
+          
+        }
+      })
+
+    </Script>
 </body>
 </html>
